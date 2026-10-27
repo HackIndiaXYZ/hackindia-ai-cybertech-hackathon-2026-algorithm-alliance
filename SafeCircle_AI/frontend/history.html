@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>History | SafeCircle AI</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+
+<body data-page="history">
+  <header id="navbar"></header>
+
+  <main class="container">
+    <h1>Saved result summaries</h1>
+
+    <p>
+      Demo summaries are stored in this browser tab's session.
+    </p>
+
+    <label for="history-filter">Filter results</label>
+
+    <select id="history-filter">
+      <option value="all">All results</option>
+      <option value="unknown">Not verified</option>
+      <option value="suspicious">Suspicious</option>
+      <option value="high">High concern</option>
+      <option value="blocked">Blocked example</option>
+    </select>
+
+    <section id="history-list"></section>
+
+    <button id="clear-history" class="secondary">
+      Clear history and demo review queue
+    </button>
+
+    <p id="notification" role="status" aria-live="polite"></p>
+  </main>
+</body>
+</html>

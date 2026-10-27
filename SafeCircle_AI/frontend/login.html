@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login | SafeCircle AI</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+
+<body data-page="login">
+  <header id="navbar"></header>
+
+  <main class="container">
+    <section class="card auth-card">
+      <h1>Welcome back</h1>
+
+      <p id="auth-description">
+        Sign in to your SafeCircle account.
+      </p>
+
+      <form id="auth-form">
+        <div id="credentials">
+          <label for="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            autocomplete="username"
+            required
+          >
+
+          <label for="password">Password</label>
+          <input
+            id="password"
+            type="password"
+            autocomplete="current-password"
+            required
+          >
+        </div>
+
+        <button id="auth-submit" type="submit">Login</button>
+      </form>
+
+      <p id="notification" role="status" aria-live="polite"></p>
+
+      <p>
+        New here?
+        <a href="register.html">Create an account</a>
+      </p>
+    </section>
+  </main>
+</body>
+</html>

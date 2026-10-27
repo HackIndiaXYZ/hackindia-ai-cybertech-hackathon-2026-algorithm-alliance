@@ -1,0 +1,16 @@
+.auth-card {
+  max-width: 480px;
+  margin: 35px auto;
+}
+
+.auth-card h1 {
+  font-size: 2rem;
+}
+
+.auth-card button {
+  width: 100%;
+}
+
+.auth-card p {
+  color: var(--muted);
+}

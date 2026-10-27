@@ -1,0 +1,11 @@
+#guardian-list {
+  margin-top: 25px;
+}
+
+#guardian-list .card {
+  border-left: 5px solid var(--primary);
+}
+
+#guardian-list .actions {
+  margin-top: 15px;
+}

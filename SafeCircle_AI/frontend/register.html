@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register | SafeCircle AI</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+
+<body data-page="register">
+  <header id="navbar"></header>
+
+  <main class="container">
+    <section class="card auth-card">
+      <h1>Create an account</h1>
+
+      <p id="auth-description">
+        Start your digital safety journey.
+      </p>
+
+      <form id="auth-form">
+        <div id="credentials">
+          <label for="name">Name</label>
+          <input
+            id="name"
+            autocomplete="name"
+            maxlength="80"
+            required
+          >
+
+          <label for="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            autocomplete="email"
+            required
+          >
+
+          <label for="password">Password</label>
+          <input
+            id="password"
+            type="password"
+            minlength="12"
+            autocomplete="new-password"
+            required
+          >
+        </div>
+
+        <button id="auth-submit" type="submit">
+          Create account
+        </button>
+      </form>
+
+      <p id="notification" role="status" aria-live="polite"></p>
+
+      <p>
+        Already registered?
+        <a href="login.html">Login</a>
+      </p>
+    </section>
+  </main>
+</body>
+</html>

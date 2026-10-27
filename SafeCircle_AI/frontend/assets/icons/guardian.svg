@@ -1,0 +1,18 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 48 48"
+>
+  <circle cx="18" cy="14" r="8" fill="#17654e"/>
+
+  <path
+    d="M4 42V32a14 14 0 0 1 28 0v10z"
+    fill="#17654e"
+  />
+
+  <circle cx="35" cy="22" r="6" fill="#6d9156"/>
+
+  <path
+    d="M26 42v-9a9 9 0 0 1 18 0v9z"
+    fill="#6d9156"
+  />
+</svg>

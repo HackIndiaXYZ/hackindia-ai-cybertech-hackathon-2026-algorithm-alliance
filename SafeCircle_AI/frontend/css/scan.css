@@ -1,0 +1,18 @@
+.scan-form {
+  max-width: 760px;
+}
+
+#qr-section {
+  margin-top: 20px;
+  padding: 18px;
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+}
+
+#result-container {
+  max-width: 800px;
+}
+
+#content {
+  min-height: 180px;
+}

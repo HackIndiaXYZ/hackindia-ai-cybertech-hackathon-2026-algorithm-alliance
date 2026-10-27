@@ -1,0 +1,29 @@
+@media (max-width: 760px) {
+  .container .grid,
+  .container .hero {
+    grid-template-columns: 1fr;
+  }
+
+  header .nav-inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .container .hero-image {
+    max-width: 300px;
+    margin: auto;
+  }
+
+  .container .card {
+    padding: 20px;
+  }
+
+  .container .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .actions .button {
+    text-align: center;
+  }
+}

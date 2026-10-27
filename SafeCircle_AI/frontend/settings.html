@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Settings | SafeCircle AI</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+
+<body data-page="settings">
+  <header id="navbar"></header>
+
+  <main class="container">
+    <h1>Your preferences</h1>
+
+    <form id="settings-form" class="card">
+      <label for="user-mode">Explanation style</label>
+
+      <select id="user-mode">
+        <option value="child">Child-friendly</option>
+        <option value="senior">Senior-friendly</option>
+      </select>
+
+      <p>
+        This changes explanations for new checks.
+        It does not verify age or enforce parental controls.
+      </p>
+
+      <label class="checkbox-label">
+        <input id="large-text" type="checkbox">
+        Larger text
+      </label>
+
+      <label class="checkbox-label">
+        <input id="high-contrast" type="checkbox">
+        Higher contrast
+      </label>
+
+      <button type="submit">Save preferences</button>
+    </form>
+
+    <section class="card">
+      <h2>Privacy and consent</h2>
+
+      <p>
+        Saving history is optional for each check.
+        Adding a summary to the demo review queue also saves it locally.
+        Nothing is sent to a family member.
+      </p>
+
+      <button id="reset-data" class="secondary">
+        Reset all demo data
+      </button>
+    </section>
+
+    <p id="notification" role="status" aria-live="polite"></p>
+  </main>
+</body>
+</html>

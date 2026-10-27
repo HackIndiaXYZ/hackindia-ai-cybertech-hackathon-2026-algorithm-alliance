@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Check Content | SafeCircle AI</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+
+<body data-page="scan">
+  <header id="navbar"></header>
+
+  <main class="container">
+    <h1>Check before you act</h1>
+
+    <p>
+      In demo mode, use fictional content.
+      Checks use simple rules and cannot verify safety.
+    </p>
+
+    <form id="scan-form" class="card scan-form">
+      <label for="content-type">Content type</label>
+
+      <select id="content-type">
+        <option value="message">Message</option>
+        <option value="url">Website link</option>
+        <option value="qr">QR destination</option>
+      </select>
+
+      <div id="qr-section" hidden>
+        <label for="qr-image">Upload a QR image</label>
+
+        <input
+          id="qr-image"
+          type="file"
+          accept="image/png,image/jpeg,image/webp"
+        >
+
+        <p id="qr-status" role="status">
+          If decoding is unavailable, paste the destination manually.
+        </p>
+      </div>
+
+      <label for="content">Content to check</label>
+
+      <textarea
+        id="content"
+        rows="7"
+        maxlength="5000"
+        placeholder="Paste a message or complete https:// link"
+        required
+      ></textarea>
+
+      <label class="checkbox-label">
+        <input id="save-history" type="checkbox">
+        Save the result summary in this tab's history
+      </label>
+
+      <small>
+        Demo history does not store the submitted message or URL.
+      </small>
+
+      <div class="actions">
+        <button id="scan-button" type="submit">
+          Check warning signs
+        </button>
+
+        <button
+          id="sample-button"
+          class="secondary"
+          type="button"
+        >
+          Try fake KYC example
+        </button>
+      </div>
+    </form>
+
+    <p id="notification" role="status" aria-live="polite"></p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Safety Coach | SafeCircle AI</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+
+<body data-page="coach">
+  <header id="navbar"></header>
+
+  <main class="container">
+    <h1>Learn safer digital habits</h1>
+
+    <section class="grid">
+      <article class="card lesson">
+        <span class="badge">Lesson 1</span>
+        <h2>Pause under pressure</h2>
+        <p>
+          Unexpected threats and deadlines can pressure you into
+          acting quickly. Verify the request independently.
+        </p>
+      </article>
+
+      <article class="card lesson">
+        <span class="badge">Lesson 2</span>
+        <h2>Question surprise rewards</h2>
+        <p>
+          Free prizes or game currency can be bait for private
+          information. Ask someone you trust before continuing.
+        </p>
+      </article>
+
+      <article class="card lesson">
+        <span class="badge">Lesson 3</span>
+        <h2>Protect private codes</h2>
+        <p>
+          Do not share OTPs, PINs, or passwords with someone
+          who contacts you asking for them.
+        </p>
+      </article>
+    </section>
+
+    <form id="quiz-form" class="card">
+      <h2>Try a scenario</h2>
+
+      <p>
+        An unexpected message says:
+        “Your account will close in 10 minutes. Send your OTP.”
+      </p>
+
+      <label for="quiz-answer">What should you do?</label>
+
+      <select id="quiz-answer" required>
+        <option value="">Choose an answer</option>
+        <option value="share">Send the OTP quickly</option>
+        <option value="verify">
+          Pause and contact the bank through a trusted channel
+        </option>
+        <option value="click">Open the supplied link</option>
+      </select>
+
+      <button type="submit">Check answer</button>
+
+      <p id="quiz-feedback" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+</body>
+</html>

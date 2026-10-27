@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard | SafeCircle AI</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+
+<body data-page="dashboard">
+  <header id="navbar"></header>
+
+  <main class="container">
+    <p class="eyebrow">YOUR SAFETY OVERVIEW</p>
+    <h1>Safety dashboard</h1>
+
+    <section class="grid">
+      <article class="card">
+        <p>Saved checks</p>
+        <strong id="total-checks" class="stat">0</strong>
+      </article>
+
+      <article class="card">
+        <p>Flagged checks</p>
+        <strong id="flagged-checks" class="stat">0</strong>
+      </article>
+
+      <article class="card">
+        <p>Pending reviews</p>
+        <strong id="pending-reviews" class="stat">0</strong>
+      </article>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Check content</h2>
+        <p>Review a message, link, or QR destination.</p>
+        <a class="button" href="scan.html">Start check</a>
+      </article>
+
+      <article class="card">
+        <h2>Guardian review</h2>
+        <p>Explore the local review simulation.</p>
+        <a class="button secondary" href="guardian.html">
+          Open review queue
+        </a>
+      </article>
+
+      <article class="card">
+        <h2>Safety Coach</h2>
+        <p>Practise recognizing suspicious requests.</p>
+        <a class="button secondary" href="coach.html">
+          Start learning
+        </a>
+      </article>
+    </section>
+
+    <p id="notification" role="status"></p>
+  </main>
+</body>
+</html>

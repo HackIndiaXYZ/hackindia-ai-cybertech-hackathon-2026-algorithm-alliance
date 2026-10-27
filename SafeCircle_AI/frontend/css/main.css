@@ -1,0 +1,162 @@
+@import url("./components.css");
+@import url("./auth.css");
+@import url("./dashboard.css");
+@import url("./scan.css");
+@import url("./guardian.css");
+@import url("./coach.css");
+@import url("./responsive.css");
+
+:root {
+  --background: #f3f7f5;
+  --surface: #ffffff;
+  --text: #183b32;
+  --muted: #50665e;
+  --primary: #17654e;
+  --border: #cbdad2;
+  --accent: #dff1ba;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--background);
+}
+
+.container {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+  padding: 36px 0 60px;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: 1.35rem;
+}
+
+p {
+  max-width: 72ch;
+}
+
+a {
+  color: var(--primary);
+}
+
+header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-inner {
+  width: min(1200px, 94%);
+  margin: auto;
+  padding: 18px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.brand img {
+  width: 36px;
+  height: 36px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  font-weight: bold;
+}
+
+.demo-banner {
+  padding: 10px 4%;
+  background: #fff0cc;
+  color: #614600;
+  font-size: 0.9rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 420px;
+}
+
+.eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.icon {
+  width: 44px;
+  height: 44px;
+}
+
+footer {
+  padding: 25px;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+
+.large-text {
+  font-size: 20px;
+}
+
+.high-contrast {
+  --background: #ffffff;
+  --surface: #ffffff;
+  --text: #000000;
+  --muted: #222222;
+  --primary: #00482d;
+  --border: #222222;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+:focus-visible {
+  outline: 3px solid #b95200;
+  outline-offset: 4px;
+}
